@@ -11,7 +11,7 @@ function formatNumber(number) {
 
 // Cập nhật thời gian hiện tại
 function updateCurrentTime() {
-    const now = new Date();
+    const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Ho_Chi_Minh' }));
     
     const hours = now.getHours();
     const minutes = now.getMinutes();
